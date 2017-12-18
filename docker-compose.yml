@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image:  34.229.202.159/app-finace
+    image:  34.229.202.159/financeapp/app-finace
     ports:
      - "8090:8080"
     links:
@@ -10,7 +10,7 @@ services:
      - connector
 
   db:
-    image:  34.229.202.159/mysql-finance
+    image:  34.229.202.159/financeapp/mysql-finance
     ports:
      - "3306:3306"
     container_name: mysqldb
